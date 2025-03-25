@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="Windows-1252" ?> 
+
+<!-- Created By PAD Creator version: 1.2.2 -->
+<!-- Available for download at: http://www.padcreator.com -->
+
+<XML_DIZ_INFO>
+
+<MASTER_PAD_VERSION_INFO>
+ <MASTER_PAD_VERSION>1.15</MASTER_PAD_VERSION>
+ <MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+</MASTER_PAD_VERSION_INFO>
+
+<Company_Info>
+ <Company_Name>Created By Michael Hardy</Company_Name>
+ <Address_1>5846 Rock Rd</Address_1>
+ <Address_2 />
+ <City_Town>Bourbon</City_Town>
+ <State_Province>Missouri</State_Province>
+ <Zip_Postal_Code>65441</Zip_Postal_Code>
+ <Country>United States</Country>
+ <Company_WebSite_URL>http://www.ultraappgalaxy.com</Company_WebSite_URL>
+  <Contact_Info>
+  <Author_First_Name>Michael</Author_First_Name>
+  <Author_Last_Name>Hardy</Author_Last_Name>
+  <Author_Email>ultraappgalaxy@gmail.com</Author_Email>
+  <Contact_First_Name>Michael</Contact_First_Name>
+  <Contact_Last_Name>Hardy</Contact_Last_Name>
+  <Contact_Email>ultraappgalaxy@gmail.com</Contact_Email>
+ </Contact_Info>
+ <Support_Info>
+  <Sales_Email>ultraappgalaxy@gmail.com</Sales_Email>
+  <Support_Email>ultraappgalaxy@gmail.com</Support_Email>
+  <General_Email>ultraappgalaxy@gmail.com</General_Email>
+  <Sales_Phone>573-259-8219</Sales_Phone>
+  <Support_Phone>573-259-8219</Support_Phone>
+  <General_Phone>573-259-8219</General_Phone>
+  <Fax_Phone />
+ </Support_Info>
+</Company_Info>
+
+<Program_Info>
+ <Program_Name>Michael Hardy's Ultra Fighter Game!</Program_Name>
+ <Program_Version>2.4.8</Program_Version>
+ <Program_Release_Month>03</Program_Release_Month>
+ <Program_Release_Day>14</Program_Release_Day>
+ <Program_Release_Year>2025</Program_Release_Year>
+ <Program_Cost_Dollars>50.00</Program_Cost_Dollars>
+ <Program_Cost_Other_Code />
+ <Program_Cost_Other />
+ <Program_Type>Commercial</Program_Type>
+ <Program_Release_Status>New Release</Program_Release_Status>
+ <Program_Install_Support>Install and Uninstall</Program_Install_Support>
+ <Program_OS_Support>Win95,Win98,WinME,WinNT 3.x,WinNT 4.x,WinXP,Windows2000</Program_OS_Support>
+ <Program_Language>English</Program_Language>
+ <File_Info>
+  <Filename_Versioned>Ultra-24.exe</Filename_Versioned>
+  <Filename_Previous>Ultra-24.exe</Filename_Previous>
+  <Filename_Generic>Ultra-.exe</Filename_Generic>
+  <Filename_Long>Ultra-Fighter-Install-Wizard.exe</Filename_Long>
+  <File_Size_Bytes>141989584</File_Size_Bytes>
+  <File_Size_K>138662</File_Size_K>
+  <File_Size_MB>135.41</File_Size_MB>
+ </File_Info>
+ <Expire_Info>
+  <Has_Expire_Info>N</Has_Expire_Info>
+  <Expire_Count />
+  <Expire_Based_On />
+  <Expire_Other_Info />
+ </Expire_Info>
+ <Program_Change_Info>Some Graphic Enhancements, Updated Sound Effects</Program_Change_Info>
+ <Program_Specific_Category>Games</Program_Specific_Category>
+ <Program_Categories>Action</Program_Categories>
+ <Program_System_Requirements>Microsoft Windows XP  or  Later, 1366768 Screen Resolution, Intel Graphics Card!</Program_System_Requirements>
+ <Includes_JAVA_VM>N</Includes_JAVA_VM>
+ <Includes_VB_Runtime>N</Includes_VB_Runtime>
+ <Includes_DirectX>N</Includes_DirectX>
+</Program_Info>
+
+<Program_Descriptions>
+ <English>
+  <Keywords>Michael Hartdy, Microsoft Windows, Windows 7, Fighting Game, Game, Fighting, Ultra Fighter, Ultltra App Galaxy</Keywords>
+  <Char_Desc_45>Ultra Fighter is a Fighting Game 4 Windows</Char_Desc_45>
+  <Char_Desc_80>Ultra Fighter Is an Awesome Game For Microsoft Windows Operating System(s)..</Char_Desc_80>
+  <Char_Desc_250>Ultra Fighter Is an Awesome Game For Microsoft Windows Operating System(s)... It Was Written and Created  By Michael Hardy Of Ultra App Galaxy! This Game Contains Excellent Graphics, Smooth Animation, Supurb  Sound Effects and Terrific Music...</Char_Desc_250>
+  <Char_Desc_450>Ultra Fighter Is an Awesome Game For Microsoft Windows Operating System(s)... It Was Written and Created  By Michael Hardy Of Ultra App Galaxy! This Game Contains Excellent Graphics, Smooth Animation, Supurb  Sound Effects and Terrific Music...</Char_Desc_450>
+  <Char_Desc_2000>Ultra Fighter Is an Awesome Game For Microsoft Windows Operating System(s)... It Was Written and Created  By Michael Hardy Of Ultra App Galaxy! This Game Contains Excellent Graphics, Smooth Animation, Supurb  Sound Effects and Terrific Music...</Char_Desc_2000>
+ </English>
+</Program_Descriptions>
+
+<Web_Info>
+ <Application_URLs>
+  <Application_Info_URL>http://www.ultrafighter.ultraappgalaxy.com</Application_Info_URL>
+  <Application_Order_URL>https://ultra-app-galaxy.itch.io/ultrafighter</Application_Order_URL>
+  <Application_Screenshot_URL>http://www.ultrafighter.ultraappgalaxy.com/screenshots.html</Application_Screenshot_URL>
+  <Application_Icon_URL>http://www.ultrafighter.ultraappgalaxy.com/img/favicon.png</Application_Icon_URL>
+  <Application_XML_File_URL>http://www.ultrafighter.ultraappgalaxy.com/ipadfile/UltraFighter.xml</Application_XML_File_URL>
+ </Application_URLs>
+ <Download_URLs>
+  <Primary_Download_URL>https://ia601503.us.archive.org/27/items/ultrafighter/Windows%20EXE/Windows%207%20Ultimate/Download/Installation%20Wuzard/Ultra-</Primary_Download_URL>
+  <Secondary_Download_URL>https://www.mediafire.com/file/w3fbec9cb8mqgo9/Ultra-Fighter-Install-Wizard.exe/file</Secondary_Download_URL>
+  <Additional_Download_URL_1>https://ia601503.us.archive.org/27/items/ultrafighter/Windows%20EXE/Windows%207%20Ultimate/Download/Installation%20Wuzard/Ultra-</Additional_Download_URL_1>
+  <Additional_Download_URL_2>https://www.mediafire.com/file/w3fbec9cb8mqgo9/Ultra-Fighter-Install-Wizard.exe/file</Additional_Download_URL_2>
+ </Download_URLs>
+</Web_Info>
+
+<Permissions>
+ <Distribution_Permissions>Michael Hardy's ™ Ultra Fighter Game is Free Software 
+and is Distributed Under The {"ÉULA"} License Agreement!
+
+Read Below :
+
+http:\\www.ultrafighter.ultraappgalaxy.com
+
+ 
+
+End-User License Agreement For Ultra Fighter!
+
+This End-User License Agreement ("ÉULA") is a legal agreement between you (either an individual or a single entity) and the mentioned author (Mike Hardy) of this Software for the software product identified above, 
+which includes computer software and may include ass</Distribution_Permissions>
+ <EULA>Michael Hardy's ™ Ultra Fighter Game is Free Software 
+and is Distributed Under The {"ÉULA"} License Agreement!
+
+Read Below :
+
+http:\\www.ultrafighter.ultraappgalaxy.com
+
+ 
+
+End-User License Agreement For Ultra Fighter!
+
+This End-User License Agreement ("ÉULA") is a legal agreement between you (either an individual or a single entity) and the mentioned author (Mike Hardy) of this Software for the software product identified above, 
+which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). 
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bounded by the terms of this EULA. 
+If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+SOFTWARE PRODUCT LICENSE
+All versions of the SOFTWARE PRODUCT are protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. 
+The sole property belongs to Mike Hardy. The SOFTWARE PRODUCT may not be duplicated, sold, distributed or utilized in any manner not described herein without the prior written consent of Mike Hardy. 
+Parties interested in licensing the SOFTWARE PRODUCT for other than personal use should contact
+Michael at:Email address ultraappgalaxy@gmail.com
+
+1. GRANT OF LICENSE. This EULA grants you the following rights: Installation and Use. You may install and use an unlimited number of copies of the SOFTWARE PRODUCT.
+
+Reproduction and Distribution. You may reproduce and distribute an unlimited number of copies of the SOFTWARE PRODUCT; provided that each copy shall be a true and complete copy, including all copyright and trademark notices, and shall be accompanied by a copy of this EULA.
+Copies of the SOFTWARE PRODUCT may be distributed as a standalone product or included with your own product as long as The SOFTWARE PRODUCT is not sold or included in a product or package that intends to receive benefits through the inclusion of the SOFTWARE PRODUCT. 
+The SOFTWARE PRODUCT may be included in any free or non-profit packages or products.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.
+Limitations on Reverse Engineering, Decompilation, Disassembly and change(add,delete or modify)the resources in the compiled the assembly. You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.
+
+Separation of Components.
+The SOFTWARE PRODUCT is licensed as a single product. Its component parts may not be separated for use on more than one computer.
+
+Software Transfer.
+You may permanently transfer all of your rights under this EULA, provided the recipient agrees to the terms of this EULA.
+
+Termination.
+Without prejudice to any other rights, the Author of this Software may terminate this EULA if you fail to comply with the terms and c</EULA>
+</Permissions>
+
+<ASP>
+ <ASP_FORM>Y</ASP_FORM>
+ <ASP_Member>N</ASP_Member>
+ <ASP_Member_Number></ASP_Member_Number>
+</ASP>
+
+
+
+<TPA>
+ <TPA_FORM>Y</TPA_FORM>
+ <TPA_Member>N</TPA_Member>
+ <TPA_Member_ID></TPA_Member_ID>
+ <Trial_License_Type></Trial_License_Type>
+</TPA>
+
+</XML_DIZ_INFO>
+
