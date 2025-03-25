@@ -1,0 +1,311 @@
+<h1
+id="instructions-to-create-an-icon-pack-for-ultra-weather">The China Instructions Are In The Process Of Being Translated So Check this page soon! For Now View the following English Instructions... Instructions
+To Create An Icon Pack For Michael Hardy's Ultra  Weather  App! </h1>
+<p><a href="INSTRUCTIONS.html">English  instructions (maintained)</a></p>
+<h2 id="introduction">Introduction</h2>
+<p>This is a document about icon packs in Ultra  Weather. Just like an
+icon pack for Android Launcher, it can provide weather icons and
+animators for Michael Hardy's Ultra Weather. Now, I will describe in detail how to
+build an icon provider for Ultra Weather. If there is anything unclear,
+please refer to these 2 projects: Ultra Weather  and
+FullSizePixelIconProvider, or just cantact me.</p>
+<hr />
+<h2 id="manifest-config">Manifest &amp; Config</h2>
+<p>First of all, in order for Ultra  Weather to identify the icon
+provider, you need to add the following action to
+<code>&lt;intent-filter&gt;</code> of the <code>MainActivity</code> in
+<code>AndroidManifest.xml</code>.</p>
+<pre><code>&lt;activity android:name=&quot;.main.MainActivity&quot;&gt;
+    ...
+    &lt;intent-filter&gt;
+        &lt;action android:name=&quot;org.ultraweather.ICON_PROVIDER&quot; /&gt;
+        &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+    &lt;/intent-filter&gt;
+&lt;/activity&gt;</code></pre>
+<p>After adding action, you need to create a configuration file in
+<code>res/xml</code> to declare what resources will be provided. For
+exmaple, the file name is <code>icon_provider_config.xml</code> and the
+code is as follows:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;config
+    hasWeatherIcons=&quot;true&quot;
+    hasWeatherAnimators=&quot;true&quot;
+    hasMinimalIcons=&quot;true&quot;
+    hasShortcutIcons=&quot;true&quot;
+    hasSunMoonDrawables=&quot;true&quot; /&gt;</code></pre>
+<p>After creating the XML file, you need to declare this file in
+<code>AndroidManifest.xml</code>:</p>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.breezyweather.PROVIDER_CONFIG&quot;
+        android:resource=&quot;@xml/icon_provider_config&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
+<p>And be careful, the name in <code>android:resource</code> should as
+same as the file you just created in <code>res/xml</code>. If you don’t
+create this file, or if you forget to declare it in
+<code>AndroidManifest.xml</code>, Ultra Weather will use the following
+code as the default:</p>
+<pre><code>&lt;config
+    hasWeatherIcons=&quot;true&quot;
+    hasWeatherAnimators=&quot;false&quot;
+    hasMinimalIcons=&quot;true&quot;
+    hasShortcutIcons=&quot;true&quot;
+    hasSunMoonDrawables=&quot;true&quot; /&gt;</code></pre>
+<p>Each item in configuration file corresponds to a specific type of
+resources. If you set it true, Ultra  Weather will try to read resources
+provided by icon provider. Conversely, if you set it false, Ultra 
+Weather will display its own resources directly. If you don’t declare
+the value of an item, that item will be set to the default value. I will
+explain the meaning of those items in following content.</p>
+<p>In addition to the configuration file, you can also create the
+following files and add them to <code>AndroidManifest.xml</code>:</p>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.PROVIDER_CONFIG&quot;
+        android:resource=&quot;@xml/icon_provider_config&quot; /&gt;
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.DRAWABLE_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_drawable_filter&quot; /&gt;
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.ANIMATOR_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_animator_filter&quot; /&gt;
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.SHORTCUT_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_shortcut_filter&quot; /&gt;
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.SUN_MOON_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_sun_moon_filter&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
+<p>All image resources and animator resources in icon provider need to
+be named according to specific regulation, so that Ultra  Weather can
+load these resources correctly. If you want to change the file name, you
+need to create the corresponding filter file to mark their file names. *
+<code>DRAWABLE_FILTER</code>: Image resources for weather icons, layered
+weather icons and minimal icons. * <code>ANIMATOR_FILTER</code>:
+Animator resources for layered weather icons. *
+<code>SHORTCUT_FILTER</code>: Image resources for shortcut icons. *
+<code>SUN_MOON_FILTER</code>: Sun drawable and moon drawable. (Java
+code)</p>
+<hr />
+<h2 id="weather-icons-256-256-png-format">Weather Icons (256 * 256, PNG
+Format)</h2>
+<p>These resources correspond to <code>hasWeatherIcons</code> in
+configuration file. You need to put all the weather icon resources into
+<code>res/drawable</code> in PNG format. Image size should be
+<code>256 * 256</code>. And every image should be named according to the
+following regulation:</p>
+<pre><code>weather_clear_day
+weather_clear_night
+weather_partly_cloudy_day
+weather_partly_cloudy_night
+weather_cloudy_day
+weather_cloudy_night
+weather_rain_day
+weather_rain_night
+weather_snow_day
+weather_snow_night
+weather_wind_day
+weather_wind_night
+weather_fog_day
+weather_fog_night
+weather_haze_day
+weather_haze_night
+weather_sleet_day
+weather_sleet_night
+weather_hail_day
+weather_hail_night
+weather_thunder_day
+weather_thunder_night
+weather_thunderstorm_day
+weather_thunderstorm_night</code></pre>
+<p>You can also name them according to your own ideas. For example, if I
+want to set an image <code>weather_cloudy.png</code> as both daytime
+icon and nighttime icon for cloudy weather, you can create a drawable
+filter <code>icon_provider_drawable_filter.xml</code> in
+<code>res/xml</code> and declare the file names through adding following
+content:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+    ...
+    &lt;item name=&quot;weather_cloudy_day&quot; value=&quot;weather_cloudy&quot; /&gt;
+    &lt;item name=&quot;weather_cloudy_night&quot; value=&quot;weather_cloudy&quot; /&gt;
+    ...
+&lt;/resources&gt;</code></pre>
+<p>You need to fill in the standard file name in <code>name</code>, fill
+in the real file name in <code>value</code>. (without <code>.png</code>)
+After creating the file, you also need to declare this file in
+<code>AndroidManifest.xml</code>:</p>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.DRAWABLE_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_drawable_filter&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
+<p>Of course, if icon provider don’t provide any weather icons. Ultra 
+Weather will display the default icons.</p>
+<hr />
+<h2 id="minimal-icons-256-256-png-format-24dp-xml-format">Minimal Icons
+(256 * 256, PNG  Format / 24dp, XML Format)</h2>
+<p>These resources correspond to <code>hasMinimalIcons</code> in
+configuration file. The minimal icons are used in app widget and
+notification. Every weather need 4 minimal icon images. For example,
+here are the minimal icons corresponding to daytime cloudy:</p>
+<pre><code>weather_cloudy_day_mini_light.png
+weather_cloudy_day_mini_grey.png
+weather_cloudy_day_mini_dark.png
+weather_cloudy_day_mini_xml.xml</code></pre>
+<p>The light icons, grey icons and dark icons need to be stored in
+<code>res/drawable</code> in PNG format, thier size should be
+<code>256 * 256</code>. And It is recommended to use <code>24dp</code>
+vector icons in XML format as the xml icon. Every image should be named
+according to the regulation:</p>
+<pre><code>weather_xxx_day_mini_light
+weather_xxx_day_mini_grey
+weather_xxx_day_mini_dark
+weather_xxx_day_mini_xml</code></pre>
+<p><code>xxx</code> means weather type. The value of weather type as
+same as weather icons.</p>
+<p>In order to match the font color of app widget and notification, the
+color of light icons should be <code>#fafafa</code>, the color of grey
+icons should be <code>#9e9e9e</code>, the color of dark icons should be
+<code>#424242</code>.</p>
+<p>If you want to change the file name, you need to add the following
+content to <code>icon_provider_drawable_filter.xml</code>:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+    ...
+    &lt;item name=&quot;weather_cloudy_day_mini_light&quot; value=&quot;weather_cloudy_mini_light&quot; /&gt;
+    &lt;item name=&quot;weather_cloudy_day_mini_grey&quot; value=&quot;weather_cloudy_mini_grey&quot; /&gt;
+    &lt;item name=&quot;weather_cloudy_day_mini_dark&quot; value=&quot;weather_cloudy_mini_dark&quot; /&gt;
+    &lt;item name=&quot;weather_cloudy_day_mini_xml&quot; value=&quot;weather_cloudy_mini_xml&quot; /&gt;
+    ...
+&lt;/resources&gt;</code></pre>
+<p>And don’t forget to declare this file in
+<code>AndroidManifest.xml</code>.</p>
+<hr />
+<h2
+id="animators-for-weather-icons-256-256-png-format-xml-animator-file">Animators
+For Weather Icons (256 * 256, PNG format / XML animator file)</h2>
+<p>These resources correspond to <code>hasWeatherAnimators</code> in
+configuration file. To achieve animated weather icons, you need to split
+each weather icon into 1-3 layers(<code>256 * 256</code>) and create XML
+format animator file for each layer. <img
+src="pictures/weather_icon_animator_layers.png?raw=true" /></p>
+<p>As the daytime thunderstorm example, the layer icons’ naming format
+is as follows:</p>
+<pre><code>weather_thunderstorm_day_1
+weather_thunderstorm_day_2
+weather_thunderstorm_day_3</code></pre>
+<p>If you want to change the file name, you need to declare the real
+names in <code>icon_provider_drawable_filter.xml</code>:</p>
+<pre><code>&lt;resources&gt;
+    ...
+    &lt;item name=&quot;weather_thunderstorm_day_1&quot; value=&quot;weather_thunderstorm_1&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_day_2&quot; value=&quot;weather_thunderstorm_2&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_day_3&quot; value=&quot;weather_thunderstorm_3&quot; /&gt;
+    ...
+&lt;/resources&gt;</code></pre>
+<p>And don’t forget to declare this file in
+<code>AndroidManifest.xml</code>.</p>
+<p>In addition to image resources, animator resources also need to be
+named as follows:</p>
+<pre><code>weather_thunderstorm_day_1
+weather_thunderstorm_day_2
+weather_thunderstorm_day_3</code></pre>
+<p>All the animator resources should be stored in
+<code>res/animator</code> with XML format. Similar to weather icons, if
+you want to change the file name, you should: 1. Create a animator
+filter in <code>res/xml</code>, for exmaple:
+<code>icon_provider_animator_filter.xml</code>. 2. Declare the real file
+names in <code>icon_provider_animator_filter.xml</code>:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+    ...
+    &lt;item name=&quot;weather_thunderstorm_day_1&quot; value=&quot;weather_thunderstorm_1&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_day_2&quot; value=&quot;weather_thunderstorm_2&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_day_3&quot; value=&quot;weather_thunderstorm_3&quot; /&gt;
+
+    &lt;item name=&quot;weather_thunderstorm_night_1&quot; value=&quot;weather_thunderstorm_1&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_night_2&quot; value=&quot;weather_thunderstorm_2&quot; /&gt;
+    &lt;item name=&quot;weather_thunderstorm_night_3&quot; value=&quot;weather_thunderstorm_3&quot; /&gt;
+    ...
+&lt;/resources&gt;</code></pre>
+<ol start="3" type="1">
+<li>Declare this animator filter in
+<code>AndroidManifest.xml</code>:</li>
+</ol>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.ANIMATOR_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_animator_filter&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
+<hr />
+<h2 id="shortcut-icons-192-192-png-format-768-768-png-format">Shortcut
+Icons (192 * 192, PNG format / 768 * 768, PNG format)</h2>
+<p>These resources correspond to <code>hasShortcutIcons</code> in
+configuration file. If you want to provide shortcut icons, you should
+provide 2 image resources for each weather, for example:</p>
+<pre><code>shortcuts_cloudy_day
+shortcuts_cloudy_day_foreground</code></pre>
+<ul>
+<li><code>shortcuts_cloudy_day</code>: shortcut icon for daytime cloudy.
+Its size is <code>192 * 192</code>, and its foreground is a
+<code>96 * 96</code> weather icon, its background is a circle
+(<code>176 * 176</code>).</li>
+<li><code>shortcuts_cloudy_day_foreground</code>: foreground of shortcut
+adaptive icon for daytime cloudy. Its size is <code>768 * 768</code>,
+and its foreground is a <code>256 * 256</code> weather icon.</li>
+</ul>
+<p>If you want to change the file name of shortcut icons, you should
+create a shortcut filter in <code>res/xml</code> and declare this file
+in <code>AndroidManifest.xml</code>:</p>
+<pre><code>&lt;resources&gt;
+    ...
+    &lt;item name=&quot;shortcuts_cloudy_day&quot; value=&quot;shortcuts_cloudy&quot; /&gt;
+    &lt;item name=&quot;shortcuts_cloudy_day_foreground&quot; value=&quot;shortcuts_cloudy_foreground&quot; /&gt;
+    ...
+&lt;/resources&gt;</code></pre>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.ultraweather.SHORTCUT_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_shortcut_filter&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
+<hr />
+<h2 id="sun-moon-drawables-java-class">Sun &amp; Moon Drawables (java
+class)</h2>
+<p>These resources correspond to <code>hasSunMoonDrawables</code> in
+configuration file. You need to create sun drawable and moon drawable
+with java code because drawing shapes on the canvas has better
+performance than drawing bitmap directly. However, if you aren’t good at
+coding, you can also ignore this part, Ultra Weather will use
+<code>weather_clear_day</code> and <code>weather_clear_night</code> as
+the sun icon and moon icon. And be careful, if you want to provide the
+drawable with java class, you must declare those 2 drawables in sun moon
+filter: 1. Create the filter
+<code>icon_provider_sun_moon_filter.xml</code> in <code>res/xml</code>.
+2. Add the following code (replace the contents of value with the
+drawable in your icon provider):</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;resources&gt;
+    &lt;item name=&quot;sun&quot; value=&quot;org.breezyweather.ui.image.SunDrawable&quot; /&gt;
+    &lt;item name=&quot;moon&quot; value=&quot;org.breezyweather.ui.image.MoonDrawable&quot; /&gt;
+&lt;/resources&gt;</code></pre>
+<ol start="3" type="1">
+<li>Declare this file in <code>AndroidManifest.xml</code>:</li>
+</ol>
+<pre><code>&lt;application&gt;
+    ...
+    &lt;meta-data
+        android:name=&quot;org.breezyweather.SUN_MOON_FILTER&quot;
+        android:resource=&quot;@xml/icon_provider_sun_moon_filter&quot; /&gt;
+    ...
+&lt;/application&gt;</code></pre>
