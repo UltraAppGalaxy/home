@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Mirrored from www.hardycreations.com/candygame/development.html by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 03 Nov 2009 03:02:47 GMT -->
+    <title>Candy Volcano! - A Cool Arcade Puzzle Game For Microsoft
+      Windows!</title>
+    <link rel="shortcut icon" href="candyicon.ico" type="image/x-icon">
+    <script language="JavaScript">
+<!-- ;
+/*********************************************************************/
+/* Rainbow Links or Text */
+/* This script and many more are available free online at */
+/* http://rainbow.arch.scriptmania.com */
+/* */
+/* Usage: */
+/* Insert just above end/close BODY Tag, */
+/* For Links */
+/* You don't need to add "onMouseover" and "onMouseout" attributes!! */
+/* */
+/* If you'd like to add effect to other text, then */
+/* add 'onmouseover="doRainbow(this);"' and */
+/* 'onmouseout="stopRainbow();"' to the target tags. */
+/* */
+/* This Script works with IE4,Netscape6,Mozilla browser and above, */
+/* but no error occurs on other browsers. */
+/*********************************************************************/
+// Setting //- SPEED CAN BE CHANGED HERE -
+var rate = 25; // Increase-Decrease amount ( Higher=Faster )
+// - DO NOT ALTER BELOW -
+// Main routine
+if (document.getElementById)
+window.onerror=new Function("return true")
+var objActive; var act = 0; var elmH = 0; var elmS = 128; var elmV = 255; var clrOrg; var TimerID; if (document.all) {
+document.onmouseover = doRainbowAnchor;
+document.onmouseout = stopRainbowAnchor;
+}
+else if (document.getElementById) {
+document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);
+document.onmouseover = Mozilla_doRainbowAnchor;
+document.onmouseout = Mozilla_stopRainbowAnchor;
+}
+function doRainbow(obj)
+{
+if (act == 0) {
+act = 1;
+if (obj)
+objActive = obj;
+else
+objActive = event.srcElement;
+clrOrg = objActive.style.color;
+TimerID = setInterval("ChangeColor()",100);
+}
+}
+function stopRainbow()
+{
+if (act) {
+objActive.style.color = clrOrg;
+clearInterval(TimerID);
+act = 0;
+}
+}
+function doRainbowAnchor()
+{
+if (act == 0) {
+var obj = event.srcElement;
+while (obj.tagName != 'A' && obj.tagName != 'BODY') {
+obj = obj.parentElement;
+if (obj.tagName == 'A' || obj.tagName == 'BODY')
+break;
+}
+if (obj.tagName == 'A' && obj.href != '') {
+objActive = obj;
+act = 1;
+clrOrg = objActive.style.color;
+TimerID = setInterval("ChangeColor()",100);
+}
+}
+}
+function stopRainbowAnchor()
+{
+if (act) {
+if (objActive.tagName == 'A') {
+objActive.style.color = clrOrg;
+clearInterval(TimerID);
+act = 0;
+}
+}
+}
+function Mozilla_doRainbowAnchor(e)
+{
+if (act == 0) {
+obj = e.target;
+while (obj.nodeName != 'A' && obj.nodeName != 'BODY') {
+obj = obj.parentNode;
+if (obj.nodeName == 'A' || obj.nodeName == 'BODY')
+break;
+}
+if (obj.nodeName == 'A' && obj.href != '') {
+objActive = obj;
+act = 1;
+clrOrg = obj.style.color;
+TimerID = setInterval("ChangeColor()",100);
+}
+}
+}
+function Mozilla_stopRainbowAnchor(e)
+{
+if (act) {
+if (objActive.nodeName == 'A') {
+objActive.style.color = clrOrg;
+clearInterval(TimerID);
+act = 0;
+}
+}
+}
+function ChangeColor()
+{
+objActive.style.color = makeColor();
+}
+function makeColor()
+{
+// HSVtoRGB
+if (elmS == 0) {
+elmR = elmV; elmG = elmV; elmB = elmV;
+}
+else {
+t1 = elmV;
+t2 = (255 - elmS) * elmV / 255;
+t3 = elmH % 60;
+t3 = (t1 - t2) * t3 / 60;
+if (elmH < 60) {
+elmR = t1; elmB = t2; elmG = t2 + t3;
+}
+else if (elmH < 120) {
+elmG = t1; elmB = t2; elmR = t1 - t3;
+}
+else if (elmH < 180) {
+elmG = t1; elmR = t2; elmB = t2 + t3;
+}
+else if (elmH < 240) {
+elmB = t1; elmR = t2; elmG = t1 - t3;
+}
+else if (elmH < 300) {
+elmB = t1; elmG = t2; elmR = t2 + t3;
+}
+else if (elmH < 360) {
+elmR = t1; elmG = t2; elmB = t1 - t3;
+}
+else {
+elmR = 0; elmG = 0; elmB = 0;
+}
+}
+elmR = Math.floor(elmR).toString(16);
+elmG = Math.floor(elmG).toString(16);
+elmB = Math.floor(elmB).toString(16);
+if (elmR.length == 1) elmR = "0" + elmR;
+if (elmG.length == 1) elmG = "0" + elmG;
+if (elmB.length == 1) elmB = "0" + elmB;
+elmH = elmH + rate;
+if (elmH >= 360)
+elmH = 0;
+return '#' + elmR + elmG + elmB;
+}
+// end hide -->
+  </script>
+  </head>
+  <body style="background-color: rgb(255, 255, 255); background-image: url(graphics/background.gif);">
+    <p>
+      <table border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr valign="top">
+            <td colspan="2">
+              <div style="text-align: left;"><img style="width: 280px; height: 124px;"
+                  alt="" src="graphics/logo.png"></div>
+            </td>
+          </tr>
+          <tr valign="top">
+            <td width="143"><br>
+              <br>
+              <table border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                  <tr valign="top">
+                    <td width="143"><img src="graphics/candy3.gif" align="bottom"
+                        border="0" height="45" width="78"><br>
+                      <br>
+                      <a href="index.html"><img style="border: 0px solid ; width: 139px; height: 25px;"
+                          title="ABOUT THIS GREAT GAME! / HOME PAGE..." alt="" src="buttons/about.gif"></a><br>
+                      <br>
+                      <a href="ScreenShots.html"><img style="border: 0px solid ; width: 140px; height: 25px;"
+                          title="View Some Cool Screen Shot's..." alt="" src="buttons/screenshots.gif"></a><br>
+                      <br>
+                      <span style="text-decoration: underline;"><a href="download.html"><img
+                            style="border: 0px solid ; width: 139px; height: 27px;"
+                            alt="Click Here To Download This Awesome Game Now!"
+                            title="Click Here To Download This Awesome Game Now!"
+                            src="buttons/download.gif"></a></span><br>
+                      <br>
+                      <span style="text-decoration: underline;"><a href="credits.html"><img
+                            style="border: 0px solid ; width: 139px; height: 27px;"
+                            alt="Credits For The Making..." title="Credits For The Making..."
+                            src="buttons/credits.gif"></a></span><br>
+                      <br>
+                      <a href="author.html"><img style="border: 0px solid ; width: 139px; height: 27px;"
+                          alt="About Michael Hardy..." title="About Michael Hardy..."
+                          src="buttons/author.gif"></a><br>
+                      <br>
+                      <a href="file:///C:/Candy-Game-Src/Official%20Site/development.html"><img
+                          style="border: 0px solid ; width: 139px; height: 27px;"
+                          alt="The Development &amp; Source Code Information..."
+                          title="The Development &amp; Source Code Information..."
+                          src="buttons/sourcecode.gif"></a><br>
+                      <br>
+                      <a href="buy.html"><img style="border: 0px solid ; width: 139px; height: 27px;"
+                          alt="Buy This Great Game Now!" title="Buy This Great Game Now!"
+                          src="buttons/Buy.gif"></a><br>
+                      <img src="graphics/candy2.gif" align="bottom" border="0" height="143"
+                        width="58"><br>
+                      <br>
+                      <br>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+              <br>
+            </td>
+            <td>
+              <blockquote>
+                <p><font color="#000000" face="Helvetica, Arial" size="2"><br>
+                  </font></p>
+                <p style="text-align: center;"><img style="width: 78px; height: 45px;"
+                    alt="" src="graphics/candy3.gif"><a href="buy.html"><img title="Click Here To Buy This Awesome Game Now!"
+                      style="border: 0px solid ; width: 128px; height: 51px;" src="buttons/BuyNow.gif"></a><img
+                    style="width: 78px; height: 45px;" alt="" src="graphics/candy3.gif"></p>
+                <p><font color="#000000" face="Helvetica, Arial" size="2"> <big><big><span
+                          style="font-weight: bold;">About The
+                          Development Of
+                          This Windows ® Computer Game
+                          ?</span></big></big></font></p>
+                <p><font color="#000000" face="Helvetica, Arial" size="2"><big><big><span
+                          style="font-weight: bold;"></span></big></big></font></p>
+                <p><font color="#000000" face="Helvetica, Arial" size="2"><big><big><span
+                          style="font-weight: bold;"></span><small style="color: rgb(51, 0, 153); font-weight: bold;">This
+                          Microsoft
+                          Windows
+                          ® Computer Game (Candy
+                          Volcano) Was Created By Me (Michael&nbsp; Hardy)
+                          Using&nbsp;C++...</small></big></big></font></p>
+                <p style="color: rgb(51, 0, 153); font-weight: bold;"><font face="Helvetica, Arial"
+                    size="2"><big><big><small>The
+                          Compiler Used Was MingW32 (GCC) and My Own Integrated
+                          Development
+                          Environment Called " Creative C++ "</small></big></big></font></p>
+                <p style="color: rgb(51, 0, 153); font-weight: bold;"><font face="Helvetica, Arial"
+                    size="2"><big><big><small>Creative C++
+                          can be obtained for Free from <a href="http://www.compiler.ultraappgalaxy.com">http://www.compiler.ultraappgalaxy.com</a></small></big></big></font></p>
+                <p style="color: rgb(51, 0, 153); font-weight: bold;"><font face="Helvetica, Arial"
+                    size="2"><big><big><small>Candy
+                          Volcano has been in Development Since October of 2005.
+                          Since its first
+                          release it has became a full blown project of mine.<br>
+                        </small></big></big></font></p>
+                <p style="color: rgb(51, 0, 153); font-weight: bold;"><font face="Helvetica, Arial"
+                    size="2"><big><big><small>The
+                          Game's Source Code is About 13,000 Lines of Code, It
+                          will successfully
+                          Compile Using Ceative C++&nbsp; Or Any MingW GCC
+                          Compiler or integrated development environment such as
+                          the Code::Blocks
+                          IDE or CodeLite IDE. It uses Cross Platform Libraries
+                          such as SDL,
+                          SDL_IMAGE and FMOD for sounds and music. However, I
+                          believe in order to
+                          compile this game on a Macintosh you'd probably have
+                          to use mikmod or
+                          something</small></big></big></font><font face="Helvetica, Arial"
+                    size="2"><big><big><small> Similar. Candy Volcano is based
+                          off of the
+                          Old Mac Os X Game
+                          that was produced in 1996 by John Stiles.</small></big></big></font></p>
+                <span style="font-family: Helvetica,Arial; color: rgb(102, 0, 204);"><span
+                    style="color: rgb(51, 0, 153); font-weight: bold;">All
+                    of the
+                    tools
+                    used to develop this game are Free and can be found on the
+                    Internet...</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">SDL -
+                    http://www.libsdl.org - FMOD - http://www.fmod.org -
+                    Creative C++
+                    - http://creativecpp.com -</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">Creative
+Paint
+                    - http://michaelspaint.com &nbsp;- Inno Setup -
+                    http://www.jrsoftware.org/isinfo.php or </span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">The
+                    Commercial Setup Creator
+                    Setup Factory...</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">All
+                    of
+                    the tools above are free except the Setup Factory which is
+                    NOT currently used for the Installation Wizard... &nbsp;I
+                    Currently
+                    use Inno Setup For the Installer.</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">Candy
+                    Volcano is the next generation of Puyo Puyo...</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">You
+                    can sure bet that Candy Volcano is just as cool as it
+                    sounds...</span><br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <br style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">I
+                    offer a License for the Source Code if anybody is wanting
+                    it. The
+                    License cost only $100.00 and can be bought via paypal. The
+                    License
+                    will allow you most rights to Candy Volcano.</span><span style="text-decoration: underline; color: rgb(51, 0, 153); font-weight: bold;"></span><br
+                    style="color: rgb(51, 0, 153); font-weight: bold;">
+                  <span style="color: rgb(51, 0, 153); font-weight: bold;">&nbsp;
+&nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp;Click the Below Buy Now Button to Buy The
+                    Complete
+                    Source
+                    Code Package...</span><br>
+                  <br>
+                </span>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post"><input
+                    name="cmd" value="_s-xclick" type="hidden"><input name="hosted_button_id"
+                    value="FQYZDC9VRMV6U" type="hidden">&nbsp;
+                  &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp;
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
+                    name="submit" alt="PayPal - The safer, easier way to pay online!"
+                    border="0" type="image"> <img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+                    border="0" height="1" width="1"></form>
+                <br>
+                <span style="font-family: Helvetica,Arial; color: rgb(102, 0, 204);">Candy
+Volcano
+                  is a Michael Hardy and
+                  ®&nbsp; Ultra App Galaxy. Production. I (Michael Hardy) Own
+                  all
+                  Copyrights to this Game...</span> </blockquote>
+              <font color="#000000" face="Helvetica, Arial" size="2"> </font></td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <center>
+      <p>
+        <table style="background-color: rgb(248, 255, 153);" border="0">
+          <tbody>
+            <tr style="color: black;">
+              <td>
+                <center> <font face="Verdana, Helvetica, Arial" size="2">Created
+By
+                    Michael&nbsp;Hardy</font></center>
+              </td>
+            </tr>
+            <tr>
+              <td><a href="mailto:primemobileapps@outlook.com">primemobileapps@outlook.com</a></td>
+            </tr>
+            <tr>
+              <td>
+                <center> <br>
+                </center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </center>
+    <!-- Mirrored from www.hardycreations.com/candygame/development.html by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 03 Nov 2009 03:02:47 GMT -->
+  </body>
+</html>
