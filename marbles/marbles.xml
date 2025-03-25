@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>3.11</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>PADGen 3.1.1.50 http://www.padgen.org</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://pad.asp-software.org</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>® Hardy Creations Inc.</Company_Name>
+		<Address_1 />
+		<Address_2 />
+		<City_Town>Leasburg</City_Town>
+		<State_Province>Missouri</State_Province>
+		<Zip_Postal_Code>65535</Zip_Postal_Code>
+		<Country>United States Of America</Country>
+		<Company_WebSite_URL>http://explodingmarbles.com</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>Michael</Author_First_Name>
+			<Author_Last_Name>Hardy</Author_Last_Name>
+			<Author_Email>explodingmarbles@gmail.com</Author_Email>
+			<Contact_First_Name>Michael</Contact_First_Name>
+			<Contact_Last_Name>Hardy</Contact_Last_Name>
+			<Contact_Email>explodingmarbles@gmail.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>explodingmarbles@gmail.com</Sales_Email>
+			<Support_Email>explodingmarbles@gmail.com</Support_Email>
+			<General_Email>explodingmarbles@gmail.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Exploding Marbles!</Program_Name>
+		<Program_Version>5.0.13.2012</Program_Version>
+		<Program_Release_Month>09</Program_Release_Month>
+		<Program_Release_Day>18</Program_Release_Day>
+		<Program_Release_Year>2012</Program_Release_Year>
+		<Program_Cost_Dollars>15.00</Program_Cost_Dollars>
+		<Program_Cost_Other_Code />
+		<Program_Cost_Other />
+		<Program_Type>Commercial</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>Install and Uninstall</Program_Install_Support>
+		<Program_OS_Support>Win7 x32,Win7 x64,WinServer,WinVista,WinVista x64,WinXP</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info>Added 50 Levels, Each Level Has It's Own Background, Should Work On Windows 7 32 and 64 Bit</Program_Change_Info>
+		<Program_Specific_Category>Games</Program_Specific_Category>
+		<Program_Category_Class>Games &amp; Entertainment::Arcade</Program_Category_Class>
+		<Program_System_Requirements>Windows XP or later, 800x600 Screen Resolution or higher, 3D Accelerated Graphics Card with DirectX</Program_System_Requirements>
+		<File_Info>
+			<File_Size_Bytes>50401968</File_Size_Bytes>
+			<File_Size_K>49220</File_Size_K>
+			<File_Size_MB>48.07</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>Y</Has_Expire_Info>
+			<Expire_Count>1</Expire_Count>
+			<Expire_Based_On>Days</Expire_Based_On>
+			<Expire_Other_Info>Fully Functional, Must Buy After The 1 Day Trial Period...</Expire_Other_Info>
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>3D Game, 3D Marbles Game, Exploding Marbles, Free Marble Game, Marble Game, Freeware Game, Free Game, Free 3D Game, Video Game, Arcade Game, Puzzle Game, Commercial Game, Shareware, Doom</Keywords>
+			<Char_Desc_45>A Cool 3D Marbles Computer Game For Windows!</Char_Desc_45>
+			<Char_Desc_80>A Cool Commercial 3D Marbles Computer Game!</Char_Desc_80>
+			<Char_Desc_250>Exploding Marbles! - Is a Cool 3D Marble Game that Features Excellent Graphics, Superb Sound Effects, Terrific Music, Skinnable GUI and Great Animations...</Char_Desc_250>
+			<Char_Desc_450>Exploding Marbles! - Is a Cool 3D Marble Game that Features Excellent Graphics, Superb Sound Effects, Terrific Music, Skinnable GUI and Great Animations... Group 3 or more of the same colored Marbles...</Char_Desc_450>
+			<Char_Desc_2000>Exploding Marbles is a Great Game Of Skill and Excitement... 
+
+The Object of Exploding Marbles is to Form Rows of 3 or more of the same colored 3D Marbles To Make them vanish and gain points... There Are Cool Things such as symbols on some of the marbles to make the game more interesting... Each symbol stands for something and are sort of like power icons for things like give more time, remove a whole row, etc... The Total Object of the game is to see how high of a highscore you can get and how many levels you can beat. There are a Total of 50 Levels. Each Level Has a Different Background... The Game is Totally 3D and The GUI (General User Interface) is also Skinnable which I have included Several Skins With The Game... You can Also Download Additional Skins From This Site... The Game is Commercial and Sales For $15.00
+
+The Trial Download is about 48 Megabytes But It's a Full Game... It should only take about 3 to 10 minutes to Download on a DSL or Cable Modem... The Game Was Updated On September 18th, 2012... The Current Version is Now: v5.0.13.2012
+
+This Game is Created and Maintained By Michael Hardy...</Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://explodingmarbles.com</Application_Info_URL>
+			<Application_Order_URL>http://explodingmarbles.com/buynow.html</Application_Order_URL>
+			<Application_Screenshot_URL>http://explodingmarbles.com/images/emShot.jpg</Application_Screenshot_URL>
+			<Application_Icon_URL>http://explodingmarbles.com/images/padicon.gif</Application_Icon_URL>
+			<Application_XML_File_URL>http://explodingmarbles.com/marbles.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://koolamp.com/otherdownloads/marbles/download/emTrialSetup.exe</Primary_Download_URL>
+			<Secondary_Download_URL>http://koolamp.com/otherdownloads/marbles/download/emTrialSetup.exe</Secondary_Download_URL>
+			<Additional_Download_URL_1>http://koolamp.com/otherdownloads/marbles/download/emTrialSetup.exe</Additional_Download_URL_1>
+			<Additional_Download_URL_2>http://koolamp.com/otherdownloads/marbles/download/emTrialSetup.exe</Additional_Download_URL_2>
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Exploding Marbles is Distributed under the Terms of the EULA License Agreement
+
+YOU MAY NOT UPLOAD THIS SOFTWARE TO A BBS ARCHIEVE OR ANY OTHER SITE THAT
+PROMOTES PIRACY...</Distribution_Permissions>
+		<EULA>Michael's Exploding Marbles Computer Game is Commercial 
+and is distributed under the {"ÉULA"} License Read Below!
+
+http://www.explodingmarbles.com
+
+End-User License Agreement For Exploding Marbles For Windows!
+
+This End-User License Agreement ("ÉULA") is a legal agreement between you (either an individual or a single entity) and the mentioned author (Mike Hardy) of this Software for the software product identified above, 
+which includes computer software and may include associated media, printed materials, and "online" or electronic documentation ("SOFTWARE PRODUCT"). 
+By installing, copying, or otherwise using the SOFTWARE PRODUCT, you agree to be bounded by the terms of this EULA. 
+If you do not agree to the terms of this EULA, do not install or use the SOFTWARE PRODUCT.
+
+SOFTWARE PRODUCT LICENSE
+All versions of the SOFTWARE PRODUCT are protected by copyright laws and international copyright treaties, as well as other intellectual property laws and treaties. 
+The sole property belongs to Mike Hardy. The SOFTWARE PRODUCT may not be duplicated, sold, distributed or utilized in any manner not described herein without the prior written consent of Mike Hardy. 
+Parties interested in licensing the SOFTWARE PRODUCT for other than personal use should contact Michael by: telephone at 573-732-3327
+
+1. GRANT OF LICENSE. This EULA grants you the following rights: Installation and Use. You may install and use an unlimited number of copies of the SOFTWARE PRODUCT.
+
+Reproduction and Distribution. You may reproduce and distribute an unlimited number of copies of the SOFTWARE PRODUCT; provided that each copy shall be a true and complete copy, including all copyright and trademark notices, and shall be accompanied by a copy of this EULA.
+Copies of the SOFTWARE PRODUCT may be distributed as a standalone product or included with your own product as long as The SOFTWARE PRODUCT is not sold or included in a product or package that intends to receive benefits through the inclusion of the SOFTWARE PRODUCT. 
+The SOFTWARE PRODUCT may be included in any free or non-profit packages or products.
+
+2. DESCRIPTION OF OTHER RIGHTS AND LIMITATIONS.
+Limitations on Reverse Engineering, Decompilation, Disassembly and change(add,delete or modify)the resources in the compiled the assembly. You may not reverse engineer, decompile, or disassemble the SOFTWARE PRODUCT, except and only to the extent that such activity is expressly permitted by applicable law notwithstanding this limitation.
+
+Separation of Components.
+The SOFTWARE PRODUCT is licensed as a single product. Its component parts may not be separated for use on more than one computer.
+
+Software Transfer.
+You may permanently transfer all of your rights under this EULA, provided the recipient agrees to the terms of this EULA.
+
+Termination.
+Without prejudice to any other rights, the Author of this Software may terminate this EULA if you fail to comply with the terms and conditions of this EULA. In such event, you must destroy all copies of the SOFTWARE PRODUCT and all of its component parts.
+
+3. COPYRIGHT.
+All title and copyrights in and to the SOFTWARE PRODUCT(including but not limited to any images, photographs, animations,video, audio, music, text, and "applets" incorporated into the SOFTWARE PRODUCT), the accompanying printed materials, and any copies of the SOFTWARE PRODUCT are owned by the Author of this Software. The SOFTWARE PRODUCT is protected by copyright laws and international treaty provisions. Therefore, you must treat the SOFTWARE PRODUCT like any other copyrighted material.
+
+LIMITED WARRANTY
+
+NO WARRANTIES.
+The Author of this Software expressly disclaims any warranty for the SOFTWARE PRODUCT. The SOFTWARE PRODUCT and any related documentation is provided "as is" without warranty of any kind,either express or implied, including, without limitation, the implied warranties or merchantability, fitness for a particular purpose, or noninfringement. The entire risk arising out of use or performance of the SOFTWARE PRODUCT remains with you.
+
+NO LIABILITY FOR DAMAGES.
+In no event shall the author of this Software be liable for any special, consequential,
+incidental or indirect damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or any other pecuniary loss) arising out of the use of or inability to use this product, even if the Author of this Software is aware of the possibility of such damages and known defects.
+
+</EULA>
+	</Permissions>
+	<Affiliates>
+		<Affiliates_FORM>Y</Affiliates_FORM>
+		<Affiliates_VERSION>1.4</Affiliates_VERSION>
+		<Affiliates_URL>http://pad.asp-software.org/extensions/Affiliates.htm</Affiliates_URL>
+		<Affiliates_Information_Page />
+		<Affiliates_Avangate_Order_Page />
+		<Affiliates_Avangate_Vendor_ID />
+		<Affiliates_Avangate_Product_ID />
+		<Affiliates_Avangate_Maximum_Commission_Rate />
+		<Affiliates_BMTMicro_Order_Page />
+		<Affiliates_BMTMicro_Vendor_ID />
+		<Affiliates_BMTMicro_Product_ID />
+		<Affiliates_BMTMicro_Maximum_Commission_Rate />
+		<Affiliates_Cleverbridge_Order_Page />
+		<Affiliates_Cleverbridge_Vendor_ID />
+		<Affiliates_Cleverbridge_Product_ID />
+		<Affiliates_Cleverbridge_Maximum_Commission_Rate />
+		<Affiliates_clixGalore_Order_Page />
+		<Affiliates_clixGalore_Vendor_ID />
+		<Affiliates_clixGalore_Product_ID />
+		<Affiliates_clixGalore_Maximum_Commission_Rate />
+		<Affiliates_CommissionJunction_Order_Page />
+		<Affiliates_CommissionJunction_Vendor_ID />
+		<Affiliates_CommissionJunction_Product_ID />
+		<Affiliates_CommissionJunction_Maximum_Commission_Rate />
+		<Affiliates_DigiBuy_Order_Page />
+		<Affiliates_DigiBuy_Vendor_ID />
+		<Affiliates_DigiBuy_Product_ID />
+		<Affiliates_DigiBuy_Maximum_Commission_Rate />
+		<Affiliates_DigitalCandle_Order_Page />
+		<Affiliates_DigitalCandle_Vendor_ID />
+		<Affiliates_DigitalCandle_Product_ID />
+		<Affiliates_DigitalCandle_Maximum_Commission_Rate />
+		<Affiliates_Emetrix_Order_Page />
+		<Affiliates_Emetrix_Vendor_ID />
+		<Affiliates_Emetrix_Product_ID />
+		<Affiliates_Emetrix_Maximum_Commission_Rate />
+		<Affiliates_eSellerate_Order_Page />
+		<Affiliates_eSellerate_Vendor_ID />
+		<Affiliates_eSellerate_Product_ID />
+		<Affiliates_eSellerate_Maximum_Commission_Rate />
+		<Affiliates_iPortis_Order_Page />
+		<Affiliates_iPortis_Vendor_ID />
+		<Affiliates_iPortis_Product_ID />
+		<Affiliates_iPortis_Maximum_Commission_Rate />
+		<Affiliates_Kagi_Order_Page />
+		<Affiliates_Kagi_Vendor_ID />
+		<Affiliates_Kagi_Product_ID />
+		<Affiliates_Kagi_Maximum_Commission_Rate />
+		<Affiliates_LinkShare_Order_Page />
+		<Affiliates_LinkShare_Vendor_ID />
+		<Affiliates_LinkShare_Product_ID />
+		<Affiliates_LinkShare_Maximum_Commission_Rate />
+		<Affiliates_NorthStarSol_Order_Page />
+		<Affiliates_NorthStarSol_Vendor_ID />
+		<Affiliates_NorthStarSol_Product_ID />
+		<Affiliates_NorthStarSol_Maximum_Commission_Rate />
+		<Affiliates_OneNetworkDirect_Order_Page />
+		<Affiliates_OneNetworkDirect_Vendor_ID />
+		<Affiliates_OneNetworkDirect_Product_ID />
+		<Affiliates_OneNetworkDirect_Maximum_Commission_Rate />
+		<Affiliates_Order1_Order_Page />
+		<Affiliates_Order1_Vendor_ID />
+		<Affiliates_Order1_Product_ID />
+		<Affiliates_Order1_Maximum_Commission_Rate />
+		<Affiliates_Osolis_Order_Page />
+		<Affiliates_Osolis_Vendor_ID />
+		<Affiliates_Osolis_Product_ID />
+		<Affiliates_Osolis_Maximum_Commission_Rate />
+		<Affiliates_Plimus_Order_Page />
+		<Affiliates_Plimus_Vendor_ID />
+		<Affiliates_Plimus_Product_ID />
+		<Affiliates_Plimus_Maximum_Commission_Rate />
+		<Affiliates_Regnet_Order_Page />
+		<Affiliates_Regnet_Vendor_ID />
+		<Affiliates_Regnet_Product_ID />
+		<Affiliates_Regnet_Maximum_Commission_Rate />
+		<Affiliates_Regnow_Order_Page />
+		<Affiliates_Regnow_Vendor_ID />
+		<Affiliates_Regnow_Product_ID />
+		<Affiliates_Regnow_Maximum_Commission_Rate />
+		<Affiliates_Regsoft_Order_Page />
+		<Affiliates_Regsoft_Vendor_ID />
+		<Affiliates_Regsoft_Product_ID />
+		<Affiliates_Regsoft_Maximum_Commission_Rate />
+		<Affiliates_ShareIt_Order_Page />
+		<Affiliates_ShareIt_Vendor_ID />
+		<Affiliates_ShareIt_Product_ID />
+		<Affiliates_ShareIt_Maximum_Commission_Rate />
+		<Affiliates_Shareasale_Order_Page />
+		<Affiliates_Shareasale_Vendor_ID />
+		<Affiliates_Shareasale_Product_ID />
+		<Affiliates_Shareasale_Maximum_Commission_Rate />
+		<Affiliates_SWReg_Order_Page />
+		<Affiliates_SWReg_Vendor_ID />
+		<Affiliates_SWReg_Product_ID />
+		<Affiliates_SWReg_Maximum_Commission_Rate />
+		<Affiliates_V-Share_Order_Page />
+		<Affiliates_V-Share_Vendor_ID />
+		<Affiliates_V-Share_Product_ID />
+		<Affiliates_V-Share_Maximum_Commission_Rate />
+		<Affiliates_VFree_Order_Page />
+		<Affiliates_VFree_Vendor_ID />
+		<Affiliates_VFree_Product_ID />
+		<Affiliates_VFree_Maximum_Commission_Rate />
+		<Affiliates_Yaskifo_Order_Page />
+		<Affiliates_Yaskifo_Vendor_ID />
+		<Affiliates_Yaskifo_Product_ID />
+		<Affiliates_Yaskifo_Maximum_Commission_Rate />
+	</Affiliates>
+	<ASP>
+		<ASP_FORM>Y</ASP_FORM>
+		<ASP_Member>N</ASP_Member>
+		<ASP_Member_Number />
+	</ASP>
+</XML_DIZ_INFO>

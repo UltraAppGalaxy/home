@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=ISO-8859-1" />
+    <title>Exploding Marbles! - A Cool 3D Marbles Arcade Computer Game!</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link href="emicon.ico" rel="shortcut icon" />
+  </head>
+  <body>
+    <div id="header_container">
+      <div id="header"> <a href="index.html"><img border="0" title="Total Management"
+            alt="Total Management" src="images/logo.gif" style="height: 80px; width: 454px; left: 123px; top: 0px;" /></a>
+        <ul>
+          <li><a href="index.html">Home...</a></li>
+          <li><a href="credits.html">Credits...</a></li>
+          <li><a href="skins.html">Skin's...</a></li>
+          <li><a href="download.html">Download...</a></li>
+          <li><a href="buynow.html">Donate...<span style="color: #b53332;"></span></a></li>
+          <li class="contact"><a href="mailto:ultraappgalaxy@gmail.com">Contact...</a></li>
+          <span style="font-weight: bold;"> </span>
+        </ul>
+        <h1><span style="background-color: rgb(102, 255, 153);">
+          </span></h1>
+      </div>
+    </div>
+    <div id="bodymiddlePan">
+      <h2><a name="About_The_Game__">About The Game ? <span style="text-decoration: underline;"></span></a><a
+          href="download.html"><img src="images/button.gif" title="Download The Gamel Now!"
+            alt="Download The Gamel Now!" onclick="http://emarbles.sourceforge.net/Download/emTrialSetup.exe"
+            style="border: 0px solid; width: 88px; height: 44px;" /></a></h2>
+      <br />
+      <span style="color: rgb(102, 255, 153);"><span style="color: rgb(255, 153, 255);">Exploding
+          Marbles
+          is a Great Game
+          Of Skill and
+          Excitement...</span><br />
+        <p style="color: rgb(255, 153, 255);">The
+          Object of Exploding Marbles
+          is to Form Rows of 3 or more of the
+          same colored 3D Marbles To Make them vanish and gain points... There
+          Are
+          Cool Things such as symbols on some of the marbles to make the game
+          more interesting... Each symbol stands for something and are sort of
+          like power icons for things like give more time, remove a whole row,
+          etc... The Total Object of the game is to see how high of a highscore
+          you can get and how many levels you can beat. There are a Total of 50
+          Levels. Each Level Has a Different Background... The Game is Totally
+          3D
+          and The GUI (General User
+          Interface) is also Skinnable which I have included Several Skins With
+          The Game... You can Also Download Additional Skins From This Site...
+          When I first Created This Game It Was  Commercial and Sold For
+          $48.00 However, In 2025 I decided to release it for Free!  You Can
+          Download The Free Version From This Site... To Download The Game
+          either
+          Click on the Get It Now Button Above or The Download Link on the
+          Top Menu...<br />
+          The Game Was Updated On February  28th, 2025... The Current Version is
+          Now: v6.0.48 2025 Edition!</p>
+        A Screen Shot of The Game Can Be Found At The End Of This Page...
+        <p style="text-align: center;"><a href="buynow.html"><img src="images/DonateMoneyButton.png"
+              alt="Click Here To Donate Money To This Project!" style="border: 0px solid; width: 393px; height: 164px;"
+              title="Click Here To Donate Money To This Project!" /></a></p>
+      </span></div>
+    <div id="bodyBottomPan">
+      <div id="infoPan">
+        <h2>Download!</h2>
+        <p>Download The Game  Now!</p>
+        <p class="view"><a href="download.html">Get
+            It...</a></p>
+      </div>
+      <div id="servicesPan">
+        <h2>Contact!</h2>
+        <p>Contact The Author Michael
+          Hardy...</p>
+        <p class="view"><a href="mailto:ultraappgalaxy@gmail.com">Email!</a></p>
+      </div>
+      <div id="schedulePan">
+        <h2>Credits!</h2>
+        <p>Credits For The Making...</p>
+        <p class="view"><a href="credits.html">Credits!</a></p>
+      </div>
+    </div>
+    <div id="footermainPan">
+      <div style="text-align: center;">The
+        Below Screen Shot is of the Game
+        Using The Default Skin... There Are Several Skins Included With The
+        Game...<br />
+        To Change Skins All You Have To Do is Press the Tab Key When the Game
+        Starts...<br />
+        <br />
+        <img src="images/emShot.jpg" alt="" style="width: 659px; height: 558px;" /></div>
+      <div id="footerPan">
+        <div style="text-align: center;"><img src="images/logo.gif" alt="Ultra App Galaxy!"
+            style="width: 290px; height: 109px;" title="Ultra App Galaxy!" /><br />
+        </div>
+        <br />
+        <br />
+        <div style="text-align: center;"><br />
+          Copyright © 2003-2025 - Created By Michael Hardy...
+          - ® All Rights Are Reserved...<br />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
