@@ -1,0 +1,376 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Mirrored from www.hardycreations.com/candygame/ by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 03 Nov 2009 03:02:04 GMT -->
+    <title>Candy Volcano! - A Cool Arcade Puzzle Game For Microsoft
+      Windows!</title>
+    <link rel="shortcut icon" href="candyicon.ico" type="image/x-icon">
+    <script language="JavaScript"></script><!-- ;
+/*********************************************************************//* Rainbow Links or Text */
+/* This script and many more are available free online at *//* http://rainbow.arch.scriptmania.com */
+/* *//* Usage: */
+/* Insert just above end/close BODY Tag, *//* For Links */
+/* You don't need to add "onMouseover" and "onMouseout" attributes!! *//* */
+/* If you'd like to add effect to other text, then *//* add 'onmouseover="doRainbow(this);"' and */
+/* 'onmouseout="stopRainbow();"' to the target tags. *//* */
+/* This Script works with IE4,Netscape6,Mozilla browser and above, *//* but no error occurs on other browsers. */
+/*********************************************************************/// Setting //- SPEED CAN BE CHANGED HERE -
+var rate = 25; // Increase-Decrease amount ( Higher=Faster )// - DO NOT ALTER BELOW -
+// Main routineif (document.getElementById)
+window.onerror=new Function("return true")var objActive; var act = 0; var elmH = 0; var elmS = 128; var elmV = 255; var clrOrg; var TimerID; if (document.all) {
+document.onmouseover = doRainbowAnchor;document.onmouseout = stopRainbowAnchor;
+}else if (document.getElementById) {
+document.captureEvents(Event.MOUSEOVER | Event.MOUSEOUT);document.onmouseover = Mozilla_doRainbowAnchor;
+document.onmouseout = Mozilla_stopRainbowAnchor;}
+function doRainbow(obj){
+if (act == 0) {act = 1;
+if (obj)objActive = obj;
+elseobjActive = event.srcElement;
+clrOrg = objActive.style.color;TimerID = setInterval("ChangeColor()",100);
+}}
+function stopRainbow(){
+if (act) {objActive.style.color = clrOrg;
+clearInterval(TimerID);act = 0;
+}}
+function doRainbowAnchor(){
+if (act == 0) {var obj = event.srcElement;
+while (obj.tagName != 'A' && obj.tagName != 'BODY') {obj = obj.parentElement;
+if (obj.tagName == 'A' || obj.tagName == 'BODY')break;
+}if (obj.tagName == 'A' && obj.href != '') {
+objActive = obj;act = 1;
+clrOrg = objActive.style.color;TimerID = setInterval("ChangeColor()",100);
+}}
+}function stopRainbowAnchor()
+{if (act) {
+if (objActive.tagName == 'A') {objActive.style.color = clrOrg;
+clearInterval(TimerID);act = 0;
+}}
+}function Mozilla_doRainbowAnchor(e)
+{if (act == 0) {
+obj = e.target;while (obj.nodeName != 'A' && obj.nodeName != 'BODY') {
+obj = obj.parentNode;if (obj.nodeName == 'A' || obj.nodeName == 'BODY')
+break;}
+if (obj.nodeName == 'A' && obj.href != '') {objActive = obj;
+act = 1;clrOrg = obj.style.color;
+TimerID = setInterval("ChangeColor()",100);}
+}}
+function Mozilla_stopRainbowAnchor(e){
+if (act) {if (objActive.nodeName == 'A') {
+objActive.style.color = clrOrg;clearInterval(TimerID);
+act = 0;}
+}}
+function ChangeColor(){
+objActive.style.color = makeColor();}
+function makeColor(){
+// HSVtoRGBif (elmS == 0) {
+elmR = elmV; elmG = elmV; elmB = elmV;}
+else {t1 = elmV;
+t2 = (255 - elmS) * elmV / 255;t3 = elmH % 60;
+t3 = (t1 - t2) * t3 / 60;if (elmH < 60) {
+elmR = t1; elmB = t2; elmG = t2 + t3;}
+else if (elmH < 120) {elmG = t1; elmB = t2; elmR = t1 - t3;
+}else if (elmH < 180) {
+elmG = t1; elmR = t2; elmB = t2 + t3;}
+else if (elmH < 240) {elmB = t1; elmR = t2; elmG = t1 - t3;
+}else if (elmH < 300) {
+elmB = t1; elmG = t2; elmR = t2 + t3;}
+else if (elmH < 360) {elmR = t1; elmG = t2; elmB = t1 - t3;
+}else {
+elmR = 0; elmG = 0; elmB = 0;}
+}elmR = Math.floor(elmR).toString(16);
+elmG = Math.floor(elmG).toString(16);elmB = Math.floor(elmB).toString(16);
+if (elmR.length == 1) elmR = "0" + elmR;if (elmG.length == 1) elmG = "0" + elmG;
+if (elmB.length == 1) elmB = "0" + elmB;elmH = elmH + rate;
+if (elmH >= 360)elmH = 0;
+return '#' + elmR + elmG + elmB;}
+// end hide -->
+  </head>
+  <body style="background-image: url(graphics/background.gif);">
+    <div style="text-align: left;">
+      <img style="width: 280px; height: 124px;" alt="" src="graphics/logo.png">&nbsp;
+&nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp;<big><span style="font-weight: bold;">
+          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; Game Software Updated On: March 13th, 2025<br>
+        </span></big></div>
+    <div style="text-align: center;">
+      <br>
+      <big><span style="font-weight: bold;"></span></big></div>
+    <big><span style="font-weight: bold;"></span></big>
+    <p>
+      <table style="width: 1204px; height: 1220px;" border="0" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr valign="top">
+            <td width="143"><img src="graphics/candy3.gif" align="bottom" border="0"
+                height="45" width="78"><br>
+              <br>
+              <a href="index.html"><img style="border: 0px solid ; width: 139px; height: 25px;"
+                  title="ABOUT THIS GREAT GAME! / HOME PAGE..." alt="" src="buttons/about.gif"></a><br>
+              <br>
+              <a href="ScreenShots.html"><img style="border: 0px solid ; width: 140px; height: 25px;"
+                  title="View Some Cool Screen Shot's..." alt="" src="buttons/screenshots.gif"></a><br>
+              <br>
+              <span style="text-decoration: underline;"><a href="download.html"><img
+                    style="border: 0px solid ; width: 139px; height: 27px;" alt="Click Here To Download This Awesome Game Now!"
+                    title="Click Here To Download This Awesome Game Now!" src="buttons/download.gif"></a></span><br>
+              <br>
+              <span style="text-decoration: underline;"><a href="credits.html"><img
+                    style="border: 0px solid ; width: 139px; height: 27px;" alt="Credits For The Making..."
+                    title="Credits For The Making..." src="buttons/credits.gif"></a></span><br>
+              <br>
+              <a href="author.html"><img style="border: 0px solid ; width: 139px; height: 27px;"
+                  alt="About Michael Hardy..." title="About Michael Hardy..." src="buttons/author.gif"></a><br>
+              <br>
+              <a href="development.html"><img style="border: 0px solid ; width: 139px; height: 27px;"
+                  alt="The Development &amp; Source Code Information..." title="The Development &amp; Source Code Information..."
+                  src="buttons/sourcecode.gif"></a><br>
+              <br>
+              <a href="buy.html"><img style="border: 0px solid ; width: 139px; height: 27px;"
+                  alt="Buy This Great Game Now!" title="Buy This Great Game Now!"
+                  src="buttons/Buy.gif"></a><br>
+              <img src="graphics/candy2.gif" align="bottom" border="0" height="143"
+                width="58"><br>
+              <br>
+              <br>
+            </td>
+            <td>
+              <center>
+                <p><img style="width: 78px; height: 45px;" alt="" src="graphics/candy3.gif"><a
+                    href="buy.html"><img title="Click Here To Buy This Great Game Now!"
+                      style="border: 0px solid ; width: 128px; height: 51px;" alt="Click Here To Buy This Great Game Now!"
+                      src="buttons/BuyNow.gif"></a><img style="width: 78px; height: 45px;"
+                    alt="" src="graphics/candy3.gif">,
+                  <table border="0" cellpadding="0" cellspacing="1" width="83%">
+                    <tbody>
+                      <tr>
+                        <td bgcolor="#ff6600">
+                          <table style="background-color: rgb(255, 255, 102); width: 100%;"
+                            border="0" cellspacing="1">
+                            <tbody>
+                              <tr>
+                                <td style="height: 100px; width: 100%; background-color: rgb(102, 255, 153);">
+                                  <table style="width: 538px;" border="0" cellpadding="0"
+                                    cellspacing="0">
+                                    <tbody>
+                                      <tr valign="top">
+                                        <td style="width: 377px; background-color: rgb(102, 255, 153);"><img
+                                            style="border: 0px solid ; width: 377px; height: 84px;"
+                                            alt="Michael Hardy's Candy Volcano Windows Game!"
+                                            title="Michael Hardy's Candy Volcano Windows Game!"
+                                            src="graphics/fox1.png"><br>
+                                          <blockquote> <font style="color: red; font-weight: bold;"
+                                              color="#008800" face="Verdana, Arial, Geneva, Helvetica"
+                                              size="4"><i>R</i></font><font style="color: red; font-weight: bold;"
+                                              color="#008800" face="Verdana, Arial, Geneva, Helvetica"
+                                              size="2"><i>ECENTLY...</i></font><br>
+                                            <font style="color: black; font-style: italic;"
+                                              color="#008800" face="Verdana, Arial, Geneva, Helvetica"
+                                              size="3">A
+                                              Mad Scientist at a Candy Factory
+                                              UnVeiled his greatest creation: A
+                                              batch of living Candy, brought to
+                                              life through the
+                                              Miracles of Genetic Mutation.
+                                              Unfortunately, his formula had a
+                                              Fatal
+                                              Flaw—The Living Candy Immediately
+                                              began to Multiply by the
+                                              Thousands! Within Minutes, the
+                                              Plant began to Overflow with
+                                              Candy...</font><span style="color: black; font-style: italic;">
+                                            </span><br>
+                                          </blockquote>
+                                        </td>
+                                        <td width="161"><img style="width: 126px; height: 135px;"
+                                            src="graphics/fox2.gif" align="bottom"
+                                            border="0"><br>
+                                          <br>
+                                          <br>
+                                          <img style="width: 161px; height: 82px;"
+                                            alt="" src="graphics/CandyIconLogo.jpg"></td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                  <blockquote> <font style="color: red; font-style: italic;"
+                                      color="#008800" face="Verdana, Arial, Geneva, Helvetica"
+                                      size="3">Luckily,
+                                      a Quick-Thinking Researcher quickly discov</font><font
+                                      style="color: red; font-style: italic;" color="#008800"
+                                      face="Verdana, Arial, Geneva, Helvetica" size="3">ered
+how
+                                      to fend off
+                                      the Rapidly Multiplying Creatures. The
+                                      Mutated Candy became extremely
+                                      reactive when grouped together - and when
+                                      four of the same Color
+                                      Touched, they would Instantly Vaporize!</font>
+                                    <p> </p>
+                                  </blockquote>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </p>
+              </center>
+              <blockquote>
+                <p> <a href="ScreenShots.html"><img style="border: 0px solid ; width: 227px; height: 214px; float: right;"
+                      alt="" src="graphics/CandyVolcano.gif"> </a><font style="font-style: italic; color: rgb(153, 51, 153); font-weight: bold;"
+                    face="Verdana, Arial, Geneva, Helvetica" size="3">Candy
+                    Volcano is an Exciting Combination of Pure Action and Puzzle
+                    Gaming!&nbsp;</font></p>
+                <p style="font-style: italic; color: rgb(153, 51, 153); font-weight: bold;"><font
+                    face="Verdana, Arial, Geneva, Helvetica" size="3">The
+                    Game features 12 Unique Stages, complete with its own
+                    character and
+                    individual technique. Also, you can pair off against a
+                    friend, and even
+                    specify a handicap so that both players are evenly matched.
+                    And if you
+                    don't want to play against an opponent, Solitaire Crisis
+                    Mode allows
+                    you to practice without having to compete against an
+                    opponent. A
+                    In-Game-Tutorial is included with the game as well, so even
+                    puzzle
+                    novices can
+                    become Candy Volcano Champions in No Time. Candy
+                    Volcano is Not Free Software! - It is Shareware and of
+                    Commercial
+                    Quality...&nbsp;If you like the game then please consider
+                    Buying the
+                    Full
+                    Deluxe Edition for a Fee of $10.00&nbsp;</font></p>
+                <p style="font-style: italic; color: rgb(153, 51, 153); font-weight: bold;"><font
+                    face="Verdana, Arial, Geneva, Helvetica" size="3">Note: To
+                    Speed Up
+                    The Loading
+                    Screens Click Your Left Mouse Button...</font></p>
+                <span style="font-family: Verdana,Arial,Geneva,Helvetica; font-weight: bold;"><span
+                    style="text-decoration: underline;"></span></span><font><a href="registeredusers.html"><font
+                      face="Verdana, Arial, Geneva, Helvetica" size="3"><span style="text-decoration: underline; font-weight: bold;"><span
+                          style="text-decoration: underline;"></span></span><br>
+                    </font></a></font>
+                <p style="text-align: center;"><font><font><a href="registeredusers.html"><font
+                          face="Verdana, Arial, Geneva, Helvetica" size="3">Click
+Here
+                          To See What All You Get When You Register!</font></a></font></font></p>
+                <p style="text-align: center;"><font face="Verdana, Arial, Geneva, Helvetica"
+                    size="3"><a href="buy.html">To
+                      Buy The Full Version Now Please Click
+                      Here!</a></font></p>
+                <div style="text-align: center;"> <span style="text-decoration: underline;"><a
+                      style="color: rgb(255, 0, 0);" href="mailto:thecandygame@gmail.com">This
+                      Computer Game Was
+                      Written and Developed By Michael&nbsp;Hardy...</a><br>
+                    <br>
+                    <a href="credits.html">For
+                      The Credits For The
+                      Game Please Click Here!</a><br>
+                    <br>
+                    <a href="development.html">Click
+                      Here for
+                      Information On The Development and How you Can Obtain The
+                      Complete
+                      Source Code...</a><br>
+                    <br>
+                  </span><a href="http://www.planetsofts.com/Windows/s77271/candy-volcano-arcade-game-.html">
+                    <img style="border: 0px solid ; width: 190px; height: 259px;"
+                      alt="Candy Volcano Arcade Game! : 5 Stars award on Planetsofts"
+                      src="graphics/KA.png"></a><br>
+                  <span style="text-decoration: underline;"> <br>
+                  </span> <a href="Candy.html"><span style="text-decoration: underline;"></span></a></div>
+              </blockquote>
+            </td>
+            <td><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </p>
+    <center>
+      <br>
+      <p>
+        <table style="background-color: rgb(248, 255, 153);" border="0">
+          <tbody>
+            <tr style="color: red;">
+              <td>
+                <center> <font face="Verdana, Arial, Geneva, Helvetica" size="5"><b>What
+about
+                      the Shareware Notice?</b></font> </center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <center> <font face="Verdana, Arial, Geneva, Helvetica" size="3">If
+you
+                    have already Bought The Game and have not yet Received the
+                    Email
+                    With the Unclock Code.<br>
+                    Then <a href="mailto:ultraappgalaxy@gmail.com">Click
+                      Here</a> for The Unique
+                    Registration Code.</font> </center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <center> <font face="Verdana, Arial, Geneva, Helvetica" size="3">NOTE:
+                    2025 - YOU NOW GET THE LICENSE KEY GENERATOR WHEN YOU BUY
+                    THE GAME!<br>
+                    NO MORE NEED FOR AN EMAIL TO BE SENT!&nbsp;</font> </center>
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: transparent;">
+                <center> <font face="Verdana, Arial, Geneva, Helvetica" size="3">&nbsp;</font>
+                </center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <center> <font color="#696969" face="Verdana, Helvetica, Arial"
+                    size="2">Candy
+                    Volcano is Commerical Software:</font></center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <center> <br>
+                  <span style="font-family: Verdana,Helvetica,Arial;">Written
+                    and Developed By Michael&nbsp;Hardy</span></center>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center;"><a href="mailto:ultraappgalaxy@gmail.com"><span
+                    style="font-family: Verdana,Helvetica,Arial;">A&nbsp;® Ultra
+                    App
+                    Galaxy Production...</span></a></td>
+            </tr>
+          </tbody>
+        </table>
+      </p>
+    </center>
+    <!-- Mirrored from www.hardycreations.com/candygame/ by HTTrack Website Copier/3.x [XR&CO'2008], Tue, 03 Nov 2009 03:02:25 GMT -->
+  </body>
+</html>
