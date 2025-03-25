@@ -1,0 +1,14 @@
+; 2.xx manifest
+
+DownloadPageUrl=http://www.creativepaintsoftware.com/download.html
+
+StableVersions=3.36.*
+BetaVersions=3.37.*
+
+3.37.*_Name=Creative Paint v3.7
+3.37.*_NetFxVersion=2.0.50727
+3.37.*_InfoUrl=http://www.creativepaintsoftware.com
+3.37.*_ZipUrl=http://www.greatcdplayer.com/otherdownloads/cpaint/updates/C-Paint-Deluxe-Setup.exe
+3.37.*_ZipUrlSize=39256784
+3.37.*_ZipUrl=http://www.greatcdplayer.com/otherdownloads/cpaint/updates/C-Paint-Deluxe-Setup.exe
+3.37.*_FullZipUrlSize=39256784
