@@ -2,6 +2,24 @@
 <html lang="en">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- Basic -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Metas -->
@@ -94,45 +112,47 @@
       </dl>
       <ul>
         <li><a target="_blank" title="Michael Hardy's Fighting Game For Microsoft Windows!"
-            href="https://ultrafighter.sourceforge.io/">Ultra Fighter Game For
-            Windows!</a></li>
+            href="https://ultraappgalaxy.github.io/home/ultrafighter/">Ultra
+            Fighter Game For Windows!</a></li>
         <li><a target="_blank" title="Michael Hardy's 3D Marbles Game For Microsoft Windows!"
-            href="https://windowsgame.sourceforge.io">Exploding&nbsp; Marbles
-            Game For Windows!</a></li>
+            href="https://ultraappgalaxy.github.io/home/marbles/">Exploding&nbsp;
+            Marbles Game For Windows!</a></li>
         <li><span style=" color: #007bff;"><a target="_blank" title="Michael Hardy's Cross Platform Pacman Web Site!"
-              href="https:///gameapp.sourceforge.io/">Michael Hardy's Pacman
-              Game (Mobile App, Microsoft Windows and Online Versions!)</a></span></li>
+              href="https://ultraappgalaxy.github.io/home/gameapp/">Michael
+              Hardy's Pacman Game (Mobile App, Microsoft Windows and Online
+              Versions!)</a></span></li>
         <li><span style="  color: #007bff;"><a target="_blank" title="Michael Hardy's Weather App For Android!"
-              href="https://ultraweather.sourceforge.io/">Ultra Weather App! (
-              App For Android Devices!)</a></span></li>
+              href="https://ultraappgalaxy.github.io/home/weather/">Ultra
+              Weather App! ( App For Android Devices!)</a></span></li>
         <li><a title="Ultra Blocks Mobile Game App Web Site!" target="_blank" href="http://www.ultrablocks.ultraappgalaxy.com"><span
               style="   color: #007bff;"></span></a><a title="Ultra Blocks Mobile Game App Web Site!"
             target="_blank" href="http://www.ultrablocks.ultraappgalaxy.com"><span
               style="  color: #007bff;"></span></a><a target="_blank" title="Michael Hardy's Ultra Blocks Gamer App For Android!"
-            href="https://ultrablocks.sourceforge.io/">Ultra Blocks Game App! (
-            Mobile Game App For Android Devices!)</a></li>
+            href="https://ultraappgalaxy.github.io/home/ultrablocks/">Ultra
+            Blocks Game App! ( Mobile Game App For Android Devices!)</a></li>
         <li><a target="_blank" title="Michael Hardy's Professional Paint Web Site!"
             href="http://www.paint.ultraappgalaxy.com"><span style="  color: #007bff;"></span></a><a
             target="_blank" title="Michael Hardy's Creative Paint Software For Windows! - Web Site!"
-            href="https://paint.sourceforge.io/">Creative Paint! - Professional
-            Image and Photo Editor For Windows!<br>
+            href="https://ultraappgalaxy.github.io/home/paint/">Creative Paint!
+            - Professional Image and Photo Editor For Windows!<br>
           </a></li>
         <li><span style="     color: #007bff;"><a target="_blank" title="Michael Hardy's Candy Volcano Game For Windows! - Web Site!"
-              href="https://candygame.sourceforge.io/">Michael Hardy's Candy
-              Volcano Game For Windows!</a></span></li>
+              href="https://ultraappgalaxy.github.io/home/candygame/">Michael
+              Hardy's Candy Volcano Game For Windows!</a></span></li>
         <li><span style="      color: #007bff;"><a target="_blank" title="Kool Installation Creator For Windows! - Web Site..."
-              href="https://setupwizard..sourceforge.io/">Michael Hardy's Kool
-              Setup Maker For Windows! ( Setup Wizard Creator!)</a></span></li>
+              href="https://ultraappgalaxy.github.io/home/setupwizard/">Michael
+              Hardy's Kool Setup Maker For Windows! ( Setup Wizard Creator!)</a></span></li>
         <li><span style="       color: #007bff;"><a target="_blank" title="Michael Hardy's Skinnable CD Player For Windows! - Web Site!"
-              href="https://cdplayer.sourceforge.io/">Michael Hardy's&nbsp; Open
-              Source&nbsp; Creative CD Audio Player For Windows! (With Skins!)</a><br>
+              href="https://ultraappgalaxy.github.io/home/cdplayer/">Michael
+              Hardy's&nbsp; Open Source&nbsp; Creative CD Audio Player For
+              Windows! (With Skins!)</a><br>
           </span></li>
         <li><span style="    color: #007bff;"><a target="_blank" title="Michael Hardy's Cookie Critters Game For Windows! - Web Site!"
-              href="https://cookiecritters.sourceforge.io/">Michael Hardy's
-              Cookie Critters Game For Windows!&nbsp;</a></span></li>
+              href="https://ultraappgalaxy.github.io/home/cookiecritters/">Michael
+              Hardy's Cookie Critters Game For Windows!&nbsp;</a></span></li>
       </ul>
       <p>That's All We Have For Now But Check Back Daily Because Software,
-        Game's and App's Are Uploaded Contently As They Are Developed! </p>
+        Game's and App's Are Uploaded Constantly As They Are Developed! </p>
       <p><br>
       </p>
       <p><a title="Back To Main Page Click Here!" href="index.html">CLICK HERE

@@ -2,10 +2,31 @@
 <html lang="en">
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
     <!-- Basic -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Site Metas -->
     <meta name="keywords" content="Software, Michael Hardy, Ultra App Galaxy, Windows, Linux, Macintosh, Maqc OS X, Mobile App, Mobile Apps">
     <meta name="description" content="Software Company">
@@ -40,17 +61,15 @@
     <link href="css/style.css" rel="stylesheet">
     <!-- responsive style -->
     <link href="css/responsive.css" rel="stylesheet">
-  </head>
-  <body>
     <div class="hero_area">
       <!-- header section strats -->
       <header class="header_section">
         <div class="container-fluid"> <img style="width: 159px; height: 159px;"
             title="Our Logo" alt="Our Logo" src="images/OurLogo.png"><a class="navbar-brand"
             href="file:///C:/2026%20Ultra%20App%20Galaxy%20Site/index.html"><span><img
-                style="width: 781px; height: 127px;" title="Our Company!" alt="Our Company!"
-                src="file:///C:/2026%20Ultra%20App%20Galaxy%20Site/images/CompanyTitle.png"></span></a><a
-            class="navbar-brand" href="index.html"><span>&nbsp;<img style="width: 153px; height: 83px;"
+                style="width: 798px; height: 127px;" title="Our Company!" alt="Our Company!"
+                src="images/CompanyTitle.png"></span></a><a class="navbar-brand"
+            href="index.html"><span>&nbsp;<img style="width: 153px; height: 83px;"
                 title="Cross Platform Developer!" alt="Cross Platform Developer!"
                 src="images/CrossDev.png"></span></a>
           <nav class="navbar navbar-expand-lg custom_nav-container "><br>
@@ -95,7 +114,7 @@
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="detail-box"> <img style="width: 648px; height: 124px;"
+                    <div class="detail-box"> <img style="width: 432px; height: 124px;"
                         title="Get Our Products..." alt="Get Our Products..." src="images/OurProducts.png">
                       <p> We Offer Free, Commercial and Open Source Software,
                         Game's and Mobile App's... Most of Our Products Are Free
@@ -166,10 +185,12 @@
     <!-- service section -->
     <section class="service_section layout_padding">
       <div class="container">
-        <div class="heading_container"> <img title="Our Services..." alt="Our Services..."
-            src="images/OurServices%20_.png">
-          <p> Providing Free, Commercial and Open Source Cross Platform
-            Software, Game's and Mobile App's...</p>
+        <div class="heading_container">
+          <p> <a title="Our Services..." href="images/OurServices%20_.png"><img
+                style="width: 361px; height: 124px;" title="Our Services..." alt="Our Services..."
+                src="file:///C:/Ultra%20App%20Galaxy%20Site%20SourceForge.io/htdocs/images/OurServices%20_.png"></a></p>
+          <p>Providing Free, Commercial and Open Source Cross Platform Software,
+            Game's and Mobile App's...</p>
           <p>You can also<a href="hireme.html"> Hire Us</a> to Create a Software
             Product, Video Game Or Mobile App For You!</p>
         </div>
@@ -240,7 +261,8 @@
                 Contact&nbsp;Michael Hardy </a> </div>
           </div>
           <div class="col-md-6 ">
-            <div class="img-box"> <img src="images/about-img.png" alt=""> </div>
+            <div class="img-box"> <img style="width: 229px; height: 233px;" src="images/about-img.png"
+                alt=""> </div>
           </div>
         </div>
       </div>
@@ -248,8 +270,9 @@
     <!-- end about section -->
     <!-- case section -->
     <section class="case_section layout_padding">
-      <div class="container"> <img title="Some Of Our Products..." alt="Some Of Our Products..."
-          src="images/SomeOfOurProducts.png">
+      <div class="container">
+        <div style="text-align: center;"><img style="width: 621px; height: 127px;"
+            title="Some Of Our Products..." alt="Some Of Our Products..." src="images/SomeOfOurProducts.png"></div>
         <div class="row">
           <div class="col-md-6">
             <div class="box">
@@ -279,7 +302,7 @@
     <!-- end case section -->
     <!-- client section -->
     <section class="client_section ">
-      <div style="text-align: center;"><img style="width: 507px; height: 124px;"
+      <div style="text-align: center;"><img style="width: 386px; height: 124px;"
           title="What Our Users Say!" alt="What Our Users Say!" src="images/Testimonial.png"></div>
       <div id="customCarousel2" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
