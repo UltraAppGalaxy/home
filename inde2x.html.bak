@@ -1,26 +1,10 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Michael Hardy's Ultra Fighter Game!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -87,8 +71,8 @@
                     </li>
                   </ul>
                 </div>
-                &nbsp; <a title="Download The Game Now!" href="downloads.html"
-                  class="btn_1 d-none d-sm-block">Download Now</a> </nav>
+                &nbsp; <a title="Download The Game Now!" href="download.html" class="btn_1 d-none d-sm-block">Download</a>
+              </nav>
             </div>
           </div>
         </div>
@@ -101,26 +85,15 @@
             <div class="col-lg-6 col-md-8">
               <div class="banner_text">
                 <div class="banner_text_iner">
-                  <h1><br>
-                  </h1>
-                  <h1><br>
-                  </h1>
                   <h1>Michael Hardy's Ultra Fighter Game!</h1>
-                  <p><br>
-                  </p>
                   <p>Ultra Fighter Is an Awesome Game For Microsoft Windows
                     Operating System(s)... It Was Written and Created&nbsp; By
-                    Michael Hardy Of Ultra App Galaxy! This Game Contains
-                    Excellent Graphics, Smooth Animation, Supurb&nbsp; Sound
-                    Effects and Terrific Music...</p>
+                    Michael Hardy Of Ultra App Galaxy! </p>
                   &nbsp; <a title="Screen Shots..." href="screenshots.html" class="btn_1">Screen
-                    Shot's</a><br>
+                    Shot's </a><br>
                   <br>
                   <a title="Buy The Complete Source Code and Dev Tools!" href="sourcecode.html"
                     class="btn_1">Buy source Code</a><br>
-                  <br>
-                  <br>
-                  <img style="width: 311px; height: 165px;" alt="ESRB..." src="img/RatedMatureESRB.png"><br>
                   <br>
                 </div>
               </div>
@@ -129,35 +102,26 @@
         </div>
       </section>
       <!-- banner part start-->
-      <!--::client logo part end::--><br>
-      <br>
-      Av<br>
-      <h1>Michael Hardy's Ultra Fighter Game Is Also Available From</h1>
-      <h1>The Below Site's...</h1>
+      <!--::client logo part end::-->
       <section class="client_logo">
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-12">
-              <div class="client_logo_slider owl-carousel d-flex justify-content-between"><a
-                  href="https://www.winsite.com/"><img title="Available On WinSite"
-                    src="img/client_logo/client_logo_1.png"></a>
-                <div class="single_client_logo"> <a href="https://download.cnet.com/"><img
-                      title="Available on CNET Downloads" src="img/client_logo/client_logo_2.png"></a>
-                </div>
-                <div class="single_client_logo"> <a href="https://sourceforge.net/"><img
-                      title="Get On Source Forge" src="img/client_logo/client_logo_3.png"></a>
-                </div>
-                <div class="single_client_logo"> <a href="https://ultra-app-galaxy.itch.io/ultrafighter"><img
-                      title="Hosted On Itch.io" src="img/client_logo/client_logo_4.png"></a>
-                </div>
-                <div class="single_client_logo"> <img title="Our Main Web Site"
-                    src="img/client_logo/client_logo_5.png"> </div>
-                <div class="single_client_logo"> <a href="https://apps.microsoft.com/home?hl=en-US&amp;gl=US"><img
-                      title="Available Only On Windows!" src="img/client_logo/client_logo_6.png"
-                      alt="Available Only On Windows!"></a> </div>
-                <div class="single_client_logo"> <a href="https://www.gog.com/"><img
-                      title="Available On GOG.com" src="img/client_logo/client_logo_7.png"
-                      alt="Available On GOG.com"></a></div>
+              <div class="client_logo_slider owl-carousel d-flex justify-content-between">
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_1.png"
+                    alt="Available On Winsite"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_2.png"
+                    alt="Download On CNET Downloads"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_3.png"
+                    alt="Available On iGitHub"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_4.png"
+                    alt="Windows Store"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_5.png"
+                    alt="Ultra App Galaxy"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_6.png"
+                    alt="Windows Software!"> </div>
+                <div class="single_client_logo"> <img src="img/client_logo/client_logo_7.png"
+                    alt="Source Forge"> </div>
               </div>
             </div>
           </div>
@@ -174,14 +138,13 @@
             <div class="col-md-7 col-lg-6 col-xl-5">
               <div class="about_us_text">
                 <h2>Credits For The Making!</h2>
-                <p>This Game Was Created By Michael Hardy With Special&nbsp;
-                  Thanks to&nbsp; My Daughter (Zoe Hardy), My Mother (Sher
-                  Hardy) and My Aunt (Ann Boyer)&nbsp; <a title="Credits For The Development!"
-                    href="credits.html">Click Here For&nbsp; Full Credits...</a><br>
+                <p>this Game Was Created By Michael Hardy With Special&nbsp;
+                  thanks to my daughter (Zoe Hardy), My Mother (Sher Hardy) and
+                  My Aunt (Ann Boyer) <a title="Credits For The Development!" href="credits.html">Click
+                    Here For&nbsp; Full Credits...</a><br>
                 </p>
-                &nbsp; <a title="Get The Game Now!" href="downloads.html" class="btn_1">Download</a>
-                <a title="Screen Shots" href="screenshots.html" class="btn_1">Screen&nbsp;
-                  Shots</a> </div>
+                &nbsp; <a href="download.html" class="btn_1">Download</a> <a title="Screen Shots"
+                  href="screenshots.html" class="btn_1">Screen&nbsp; Shots</a> </div>
             </div>
           </div>
         </div>
@@ -276,7 +239,7 @@
                 <div class="single_war_text">
                   <div class="war_text_item d-flex justify-content-around align-items-center">
                     <br>
-                  </div>
+                    <a href="#" march="" 9th,="" 2025<="" a=""></a></div>
                 </div>
               </div>
             </div>
@@ -337,16 +300,14 @@
           <div class="row justify-content-center">
             <div class="col-lg-6">
               <div class="section_tittle text-center">
-                <h2>Pricing Plans</h2>
-                <p>This Game Is Licensed Under The EULA License Agreement!</p>
+                <h2>Pricing plans</h2>
               </div>
             </div>
           </div>
           <div class="row justify-content-center">
             <div class="col-lg-3 col-sm-6">
               <div class="single_pricing_part">
-                <p>Commercial<span style="color: white;"><span style="font-family: &quot;Poppins&quot;,sans-serif;">
-                      (Standard License) EULA...</span></span> </p>
+                <p>Commercial</p>
                 <h3>$50.00</h3>
                 <ul>
                   <li>Full Game</li>
@@ -357,7 +318,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="single_pricing_part">
-                <p>Premium (Distribution) License...</p>
+                <p>Premium</p>
                 <h3>$150.00</h3>
                 <ul>
                   <li>Full Game</li>
@@ -368,10 +329,7 @@
             </div>
             <div class="col-lg-3 col-sm-6">
               <div class="single_pricing_part">
-                <p>&nbsp;Ultimate&nbsp;
-                  Edition&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  (Developer's)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                  &nbsp;Ultra App Galaxy ...</p>
+                <p>Ultimate</p>
                 <h3>$5,000.00</h3>
                 <ul>
                   <li>All Available Versions</li>
@@ -401,7 +359,7 @@
                 <div class="single_footer_part">
                   <h4>Contact Info</h4>
                   <p>Address : Bourbon Missouri.</p>
-                  <p><a href="http://www.ultraappgalaxy.com">http&gt;//www.ultraappgalaxy.com</a></p>
+                  <p>http://www.ultraappga;axy.com</p>
                   <p>Phone : +1-259-8219</p>
                   <p>Email : ultrafightergame@outlook.com</p>
                 </div>
@@ -414,8 +372,7 @@
                         Contact Me </a></li>
                     <li><a href="http://www.ultraappgalaxy.com">Ultra App
                         Galaxy!</a></li>
-                    <li><a title="Buy The Premium Version!" href="https://ultra-app-galaxy.itch.io/ultrafighter">Buy
-                        The Premium Version</a></li>
+                    <li><a href="http://winsite.com">WinSite</a></li>
                     <li><a href="sourcecode.html">Source Code</a></li>
                     <li><a href="downloads.html">Download Now!</a></li>
                   </ul>
@@ -446,10 +403,10 @@
               <div class="col-lg-8">
                 <div class="copyright_text">
                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    Copyright © 2025&nbsp; All rights reserved - Created
-                    By&nbsp;&nbsp;<span style="color: red;"></span><a title="Web Site"
-                      href="http://www.ultraappgalaxy.com" target="_blank">lMichael
-                      iHardy</a></p>
+                    Copyright © 2025&nbsp; All rights reserved |</p>
+                  <p> Created By&nbsp;&nbsp;<span style="color: red;"></span><a
+                      title="Web Site" href="http://www.ultraappgalaxy.com" target="_blank">lMichael
+                      iHardy</a> </p>
                 </div>
               </div>
               <div class="col-lg-4">
@@ -495,21 +452,5 @@
     <script src="js/mail-script.js"></script>
     <!-- custom js -->
     <script src="js/custom.js"></script>
-    <script>
-    !function (t, e, c, n) {
-        var s = e.createElement(c);
-        s.async = 1, s.src = 'https://scripts.claspo.io/scripts/' + n + '.js';
-        var r = e.scripts[0];
-        r.parentNode.insertBefore(s, r);
-        var f = function () {
-            f.c(arguments);
-        };
-        f.q = [];
-        f.c = function () {
-            f.q.push(arguments);
-        };
-        t['claspo'] = t['claspo'] || f;
-    }(window, document, 'script', 'AB400A00F56B42D5A9E5C358DB3BCB40');
-</script><script>claspo('init');</script>
   </body>
 </html>

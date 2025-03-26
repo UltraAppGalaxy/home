@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type">
+    <title>stylesheet</title>
+    <meta content="Michael Hardy" name="author">
+  </head>
+  <body>
+    <pre><code data-ved="2ahUKEwinh5SQ5oCMAxU_4skDHcjCK2EQjZIMegQILhAC"><span>  /* Example media query for smaller screens */
+</span><br><span>   @media (max-width: 768px) {
+</span><br><span>       /* Styles for smaller screens like tablets */
+</span><br><span>       .container {
+</span><br><span>           width: 90%;
+</span><br><span>       }
+</span><br><span>   }</span></code></pre>
+
+
+</body></html>
